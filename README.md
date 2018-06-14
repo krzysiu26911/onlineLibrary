@@ -1,8 +1,8 @@
 ###### onlinelLibrary
 
-###Technologies
--Java
--Maven
--Spring Boot
--AngularJS
--Travis CI
+### Technologies <br />
+-Java <br />
+-Maven <br />
+-Spring Boot <br />
+-AngularJS <br />
+-Travis CI <br />
