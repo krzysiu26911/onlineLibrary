@@ -1,10 +1,10 @@
-package com.example.krzysztof.koszela.onlinelibrary;
+package com.example.krzysztof.koszela.onlineLibrary;
 
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import java.io.Serializable;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "book")
