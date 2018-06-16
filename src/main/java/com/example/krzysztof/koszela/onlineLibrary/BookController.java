@@ -1,19 +1,17 @@
 package com.example.krzysztof.koszela.onlineLibrary;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
-import com.example.krzysztof.koszela.onlineLibrary.BookRepository;
 
 @RestController
 @RequestMapping("/api")
 public class BookController {
 
     @Autowired
-    private BookRepository bookRepository;
+    BookRepository bookRepository;
 
     //Get all books
     @GetMapping("/books")
@@ -44,8 +42,7 @@ public class BookController {
         book.setRating(bookDetails.getRating());
         book.setTitle(bookDetails.getTitle());
 
-        Book updateBook = bookRepository.save(book);
-        return updateBook;
+        return bookRepository.save(book);
     }
 
     // Delete a Book
