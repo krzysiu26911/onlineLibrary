@@ -3,10 +3,14 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>Online Library</title>
+    <link rel="stylesheet" href="../css/app/app.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <script src="../js/app/app.js"></script>
 </head>
-<body ng-app="demo">
-<div class="container" ng-controller="UserController">
-    Hello world
+<body ng-app="app">
+<div class="container" ng-controller="appController">
+    {{listBook}}
 </div>
 </body>
 </html>
